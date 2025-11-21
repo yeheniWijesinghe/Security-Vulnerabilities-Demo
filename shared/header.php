@@ -46,6 +46,7 @@ if (session_status() === PHP_SESSION_NONE) session_start();
       font-weight: 500;
       transition: 0.3s;
       font-size: 15px;
+      padding-left: 1200px;
     }
 
     .nav-links a:hover {
@@ -109,9 +110,7 @@ if (session_status() === PHP_SESSION_NONE) session_start();
   <h1>Security Demo</h1>
 
   <div class="nav-links">
-    <a href="/Security-Vulnerabilities-Demo/index.php">Home</a>
-    <a href="/Security-Vulnerabilities-Demo/vulnerable/sqli.php">Vulnerable</a>
-    <a href="/Security-Vulnerabilities-Demo/secure/sqli_secure.php">Secure</a>
+    <a href="/Security-Vulnerabilities-Demo/index.php"><b>• </b>Home<b> •</b></a>
   </div>
 </div>
 

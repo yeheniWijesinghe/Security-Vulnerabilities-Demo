@@ -5,7 +5,7 @@
 <div class="card">
   <p>
     This project demonstrates common web security vulnerabilities and their secure fixes.
-    Explore the pages below to see how common vulnerabilities work — and how to fix them.
+    Explore the pages below to see how common vulnerabilities work and how to fix them.
   </p>
 </div>
 
@@ -13,7 +13,7 @@
     display: flex;
     gap: 20px;
     margin-top: 30px;
-    align-items: stretch; /* ensures equal height */
+    align-items: stretch; 
 ">
 
   <!-- LEFT: Vulnerable -->
