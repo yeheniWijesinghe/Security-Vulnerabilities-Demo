@@ -8,64 +8,61 @@ if (session_status() === PHP_SESSION_NONE) session_start();
   <title>Security Vulnerabilities Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- UI / UX Styles -->
   <style>
-    body {
+    html, body {
+      height: 100%;
       margin: 0;
       padding: 0;
+      overflow: hidden;
       font-family: "Segoe UI", Arial, sans-serif;
       background: #f5f7fb;
-      color: #333;
     }
 
-    /* Navbar */
     .navbar {
       width: 100%;
       background: #1d3557;
-      padding: 15px 25px;
+      padding: 15px 40px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start; 
+      gap: 40px; 
       box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
     }
 
     .navbar h1 {
       margin: 0;
       font-size: 22px;
       color: #f1faee;
-      letter-spacing: 0.5px;
     }
 
     .nav-links a {
-      margin-left: 15px;
+      margin-right: 15px;
       color: #f1faee;
       text-decoration: none;
       font-weight: 500;
       transition: 0.3s;
       font-size: 15px;
+      padding-left: 1200px;
     }
 
     .nav-links a:hover {
       color: #a8dadc;
     }
 
-    /* Page container */
     .page-container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 0 20px;
+      position: absolute;
+      top: 70px;  
+      bottom: 50px; 
+      left: 0;
+      right: 0;
+      padding: 20px 30px;
+      overflow-y: auto; 
     }
 
-    /* Section headers */
-    h2 {
-      color: #1d3557;
-      margin-bottom: 10px;
-      font-size: 26px;
-      border-left: 5px solid #457b9d;
-      padding-left: 12px;
-    }
-
-    /* Cards */
     .card {
       background: #ffffff;
       padding: 20px;
@@ -74,7 +71,21 @@ if (session_status() === PHP_SESSION_NONE) session_start();
       margin-bottom: 25px;
     }
 
-    /* Buttons */
+    h2 {
+      color: #1d3557;
+      margin-bottom: 10px;
+      font-size: 26px;
+      border-left: 5px solid #457b9d;
+      padding-left: 12px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      color: #457b9d;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
     .btn {
       display: inline-block;
       padding: 10px 16px;
@@ -90,27 +101,16 @@ if (session_status() === PHP_SESSION_NONE) session_start();
     .btn:hover {
       background: #457b9d;
     }
-
-    .section-title {
-      font-size: 20px;
-      color: #457b9d;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
-
   </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar">
   <h1>Security Demo</h1>
 
   <div class="nav-links">
-    <a href="/Security-Vulnerabilities-Demo/index.php">Home</a>
-    <a href="/Security-Vulnerabilities-Demo/vulnerable/sqli.php">Vulnerable</a>
-    <a href="/Security-Vulnerabilities-Demo/secure/sqli_secure.php">Secure</a>
+    <a href="/Security-Vulnerabilities-Demo/index.php"><b>• </b>Home<b> •</b></a>
   </div>
 </div>
 
