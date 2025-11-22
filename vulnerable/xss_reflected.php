@@ -1,5 +1,4 @@
 <?php
-// /vulnerable/xss_reflected.php
 require_once __DIR__ . '/../shared/header.php';
 ?>
 <div class="box">
@@ -9,7 +8,6 @@ require_once __DIR__ . '/../shared/header.php';
   <?php
   $q = $_GET['q'] ?? '';
   if ($q !== '') {
-      // UNSAFE: directly echoing user-supplied content
       echo "<h3>Search results for: $q</h3>";
       echo "<p>Fake result: " . $q . " is awesome.</p>";
   } else {
