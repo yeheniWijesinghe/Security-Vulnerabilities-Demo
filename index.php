@@ -29,7 +29,7 @@
       <li><a class="btn" href="vulnerable/sqli.php">SQL Injection</a></li>
       <li><a class="btn" href="vulnerable/xss_stored.php">Stored XSS</a></li>
       <li><a class="btn" href="vulnerable/xss_reflected.php">Reflected XSS</a></li>
-      <li><a class="btn" href="vulnerable/xss_dom.html">DOM XSS</a></li>
+      <li><a class="btn" href="vulnerable/xss_dom.php">DOM XSS</a></li>
       <li><a class="btn" href="vulnerable/csrf.php">CSRF</a></li>
     </ul>
   </div>
